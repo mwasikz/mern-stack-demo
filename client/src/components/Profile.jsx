@@ -4,7 +4,14 @@ const Profile = () => {
 
   const callProfilePage = async () => {
     try {
-      const res = await fetch('/profile')
+      const res = await fetch('/profile', {
+        method: "GET",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+        },
+        credentials: "include"
+      })
     } catch (err) {
       console.log(err);
     }

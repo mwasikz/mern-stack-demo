@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const authenticate = require('../middleware/authenticate');
+const cookieParser = require("cookie-parser");
 
 require('../db/conn');
 const User = require('../model/userSchema');
@@ -11,6 +12,7 @@ router.get('/', (req, res) => {
     res.send(`Hello from the Server`);
 });
 
+router.use(cookieParser());
 // Using Promises
 /*
 
