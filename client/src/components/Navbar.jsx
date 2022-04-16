@@ -18,7 +18,7 @@ const Navbar = () => {
           <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/about">About</NavLink>
+          <NavLink className="nav-link" to="/profile">Profile</NavLink>
         </li>
 
         <li className="nav-item">
@@ -41,4 +41,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

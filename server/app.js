@@ -15,7 +15,7 @@ app.use(require('./router/auth'));
 const PORT = process.env.PORT;
 
 /*
-app.get('/about', (req, res) => {
+app.get('/profile', (req, res) => {
     res.send(`Hello Mern Stack. from the Server`);
 })
 */

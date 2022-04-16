@@ -124,9 +124,9 @@ router.post('/signin', async (req, res) => {
     }
 })
 
-// About Us
+// Profile
 
-router.get('/about', authenticate, (req, res) => {
+router.get('/profile', authenticate, (req, res) => {
     res.send(`Hello Mern Stack. from the Server`);
 })
 
