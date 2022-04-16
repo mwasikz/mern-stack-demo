@@ -129,7 +129,7 @@ router.post('/signin', async (req, res) => {
 // Profile
 
 router.get('/profile', authenticate, (req, res) => {
-    res.send(`Hello Mern Stack. from the Server`);
+    res.send(req.rootUser);
 })
 
 
