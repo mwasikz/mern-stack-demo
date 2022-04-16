@@ -2,8 +2,16 @@ import React, { useEffect } from 'react';
 
 const Profile = () => {
 
+  const callProfilePage = async () => {
+    try {
+      const res = await fetch('/profile')
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   useEffect(() => {
-    
+    callProfilePage();
   }, []);
 
 
