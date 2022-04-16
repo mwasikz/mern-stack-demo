@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+* {
+  font-family: 'Lato', sans-serif;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  
+}
+.sign-up-container{
+  display: flex;
+  height: 560px;
+  width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 90px;
+  
+ 
+}
+.signup-content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+
+}
+.signupImg {
+
+}
+.form-title {
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.form-group {
+  padding: 6px;
+}
+.signUpBtn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.already-member-link {
+  text-decoration: none;
+  color: gray;
+  padding: 20px;
+}
+.not-member-link {
+  text-decoration: none;
+  color: gray;
+  padding: 20px;
+}
