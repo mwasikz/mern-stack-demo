@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
+const authenticate = require('../middleware/authenticate');
 
 require('../db/conn');
 const User = require('../model/userSchema');
@@ -121,6 +122,12 @@ router.post('/signin', async (req, res) => {
     } catch (err) {
         console.log(err);
     }
+})
+
+// About Us
+
+router.get('/about', authenticate, (req, res) => {
+    res.send(`Hello Mern Stack. from the Server`);
 })
 
 
